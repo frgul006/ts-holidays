@@ -121,6 +121,41 @@
           }
         }
       }
+    },
+    "ts-holidays": {
+      "root": "libs/ts-holidays",
+      "sourceRoot": "libs/ts-holidays/src",
+      "projectType": "library",
+      "prefix": "tsh",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/ts-holidays/tsconfig.lib.json",
+            "project": "libs/ts-holidays/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/ts-holidays/src/test.ts",
+            "tsConfig": "libs/ts-holidays/tsconfig.spec.json",
+            "karmaConfig": "libs/ts-holidays/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ts-holidays/tsconfig.lib.json",
+              "libs/ts-holidays/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

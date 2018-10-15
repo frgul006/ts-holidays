@@ -1,0 +1,16 @@
+{
+  "name": "@tsh/ts-holidays",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Fredrik Gullberg",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "description": "Service for handling logic regarding national holidays",
+  "keywords": [
+    "holidays",
+    "typescript",
+    "service"
+  ],
+  "repository": "frgul006/ts-holidays"
+}

@@ -16,6 +16,9 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@sample-workspace/ts-holidays": [
+        "libs/ts-holidays/src/index.ts"
+      ]
     }
   },
   "exclude": [

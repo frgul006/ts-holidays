@@ -13,6 +13,9 @@
     },
     "myapp-e2e": {
       "tags": []
+    },
+    "ts-holidays": {
+      "tags": []
     }
   }
 }

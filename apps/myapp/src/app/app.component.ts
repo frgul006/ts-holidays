@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HolidayService } from 'ts-holidays';
 
 @Component({
   selector: 'sample-workspace-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myapp';
+  /**
+   *
+   */
+  constructor() {
+    const holidayService = new HolidayService();
+    const isHoliday = holidayService.isHoliday(new Date());
+    console.log(`isHoliday: ${isHoliday}`);
+  }
 }
